@@ -1,24 +1,53 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル (ユーザー情報)　
 
-Things you may want to cover:
 
-* Ruby version
+| Column             | Type   | Options                　               |
+| ------------------ | ------ | -------------------------------------- |
+| nickname           | string | null: false                            |
+| email              | string | null: false, unique: true, default: "" |
+| encrypted_password | string | null: false, default: ""               |
+| first_name         | string | null: false                            |
+| last_name          | string | null: false                            |
+| first_name_read    | string | null: false                            |
+| last_name_read     | string | null: false                            |
 
-* System dependencies
+##　devise実装
 
-* Configuration
+### Association
+has_many :reports
+has_many :works
 
-* Database creation
 
-* Database initialization
+## report テーブル (日報情報)
 
-* How to run the test suite
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| work               | references | null: false, foreign_key: true |
+| negotiation        | string     | null: false                    |
+| negotiation_obtain | string     | null: false                    |
+| negotiation_lost   | string     | null: false                    |
+| introspection      | text       | null: false                    |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+belongs_to :user
+belongs_to :work
 
-* Deployment instructions
 
-* ...
+## works テーブル (出勤記録)
+
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| place              | float      | null: false,                   |
+| check_in           | datetime   | null: false,                   |
+| check_out          | datetime   | null: false,                   |
+
+### Association
+belongs_to :user
+belongs_to :report
+
+
+
