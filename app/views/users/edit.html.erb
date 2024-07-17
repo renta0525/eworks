@@ -10,10 +10,10 @@
       <%= form_with model: current_user, local: true do |f|%>
         <div class='field'>
           <div class='field-label'>
-            <%= f.label :name%>
+            <%= f.label :nickname%>
           </div>
           <div class='field-input'>
-            <%= f.text_field :name, autofocus: true%>
+            <%= f.text_field :nickname, autofocus: true%>
           </div>
         </div>
         <div class='field'>
@@ -22,6 +22,42 @@
           </div>
           <div class='field-input'>
             <%= f.email_field :email%>
+          </div>
+        </div>
+         <div class='field'>
+          <div class='field-label'>
+            <%= f.label :first_name%>
+            <i>(性)</i>
+          </div>
+          <div class='field-input'>
+            <%= f.text_field :first_name%>
+          </div>
+        </div>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :last_name%>
+            <i>(名)</i>
+          </div>
+          <div class='field-input'>
+            <%= f.text_field :last_name%>
+          </div>
+        </div>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :first_name_read%>
+            <i>(セイ)</i>
+          </div>
+          <div class='field-input'>
+            <%= f.text_field :first_name_read%>
+          </div>
+        </div>
+        <div class='field'>
+          <div class='field-label'>
+            <%= f.label :last_name_read%>
+            <i>(メイ)</i>
+          </div>
+          <div class='field-input'>
+            <%= f.text_field :last_name_read%>
           </div>
         </div>
         <div class='actions'>
