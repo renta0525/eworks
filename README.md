@@ -43,7 +43,6 @@ belongs_to :work
 | user               | references | null: false, foreign_key: true |
 | place              | float      | null: false,                   |
 | check_in           | datetime   | null: false,                   |
-| check_out          | datetime   | null: false,                   |
 
 ### Association
 belongs_to :user

@@ -1,4 +1,18 @@
 .main {
-  background-color: #FAFAFA;
-  height: 80vh;
+  background-color: #ffe4b5;
+  width: 980px;
+  margin: 60px auto;
+  padding: 60px;
+}
+
+.day {
+  
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.clock {
+  font-size: 100px;
+  text-align: center;
 }
