@@ -41,8 +41,8 @@ belongs_to :work
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
-| place              | float      | null: false,                   |
-| check_in           | datetime   | null: false,                   |
+| place              | string     | null: false,                   |
+<!-- | check_in           | datetime   | null: false,                   | 一旦create_atでいく -->
 
 ### Association
 belongs_to :user
