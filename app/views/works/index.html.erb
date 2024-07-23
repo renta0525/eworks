@@ -1,14 +1,22 @@
-<%= render "shared/header"%>
+<%= render "shared/header" %>
 
 <div class="wrapper">
   <div class='main'>
     <div class='day'>
-     0000年00月00年（）
+      0000年00月00年（）
     </div>
     <div class='clock'>
-     00:00:00
+      00:00:00
     </div>
+  </div>
+  <div class="btn">
+    <%= form_with model: @work, url: works_path, local: true do |form| %>
+      <%= form.hidden_field :place, id: 'work_place' %>
+      <div>
+        <%= form.submit '出勤', id: 'get-location' %>
+      </div>
+    <% end %>
   </div>
 </div>
 
-<%# <%= render "shared/footer"%> 
+<%# <%= render "shared/footer" %> 

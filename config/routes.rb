@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   # get 'works/index'
   root to: "works#index"
   resources :users, only: [:edit, :update]
+  resources :works, only: [:index, :create]
 end
