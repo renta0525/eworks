@@ -9,6 +9,7 @@
       00:00:00
     </div>
   </div>
+  <%# 出勤しましたのも文字出したい %>
   <div class="btn">
     <%= form_with model: @work, url: works_path, local: true do |form| %>
       <%= form.hidden_field :place, id: 'work_place' %>

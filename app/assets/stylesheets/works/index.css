@@ -1,4 +1,4 @@
-.main {
+/* .main {
   background-color: #ffe4b5;
   width: 980px;
   margin: 60px auto;
@@ -15,4 +15,45 @@
 .clock {
   font-size: 100px;
   text-align: center;
+}
+
+.btn {
+  font-size: 50px;
+} */
+
+/* wrapperのスタイル */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   /* ビューポートの高さに合わせる */
+  text-align: center;
+  padding: 60px 20px; /* ページの端に少しスペースを追加 */
+}
+
+/* mainのスタイル */
+.main {
+  background-color: #ffe4b5;
+  width: 980px;
+  max-width: 100%; /* ページが縮小したときに幅が100%に収まるようにする */
+  margin: 0 auto;
+  padding: 60px;
+  box-sizing: border-box; /* パディングが幅に含まれるようにする */
+}
+
+/* dayのスタイル */
+.day {
+  font-size: 50px;
+}
+
+/* clockのスタイル */
+.clock {
+  font-size: 100px;
+}
+
+/* btnのスタイル */
+.btn {
+  font-size: 50px;
+  margin-top: 20px; /* ボタンとその他の要素の間にスペースを追加 */
 }
