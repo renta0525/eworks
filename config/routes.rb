@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: "works#index"
   resources :users, only: [:edit, :update]
   resources :works, only: [:index, :create]
+  resources :reports
 end
