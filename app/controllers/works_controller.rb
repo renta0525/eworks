@@ -8,7 +8,7 @@ class WorksController < ApplicationController
   def create
     @work = current_user.works.new(work_params)
     if @work.save
-      redirect_to root_path, notice: '出勤しました！'
+      redirect_to root_path
     else
       render :index
     end

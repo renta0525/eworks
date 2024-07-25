@@ -1,0 +1,33 @@
+<%= render "shared/header" %>
+
+<%= form_with model: @report, url: reports_path, local: true do |f| %>
+  <div class= "report-filing">
+    <div class="report-filing-title">
+      商談数
+    <span class="indispensable">必須</span>
+    </div>
+    <%= f.number_field :negotiation, class:"negotiation", id:"negotiation" %>
+
+    <div class="report-filing-title">
+      成約数
+    <span class="indispensable">必須</span>
+    </div>
+    <%= f.number_field :negotiation_obtain, class:"negotiation_obtain", id:"negotiation_obtain" %>
+
+    <div class="report-filing-title">
+      失注数
+    <span class="indispensable">必須</span>
+    </div>
+    <%= f.number_field :negotiation_lost, class:"negotiation_lost", id:"negotiation_lost" %>
+
+    <div class="report-filing-title">
+      反省点
+    <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :introspection, class:"introspection", id:"introspection" %>
+  </div>
+
+  <div class='actions'>
+    <%= f.submit "提出", class: 'btn'%>
+  </div>
+<% end %>
