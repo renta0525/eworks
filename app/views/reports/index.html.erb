@@ -1,6 +1,8 @@
 <%= render "shared/header" %>
 
-<%= link_to "新規投稿", new_report_path, class: 'btn'%>
+<div class="report-creat">
+<%= link_to "新規投稿", new_report_path, class: 'report-creat-btn'%>
+</div>
 <% @reports.each do |report| %>
   <% if report.user.present? %>
     <div class ="report-list">

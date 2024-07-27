@@ -1,0 +1,41 @@
+.report-creat {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.report-creat-btn {
+  border: 4px solid orange;
+  text-decoration: none;
+  font-size: 30px;
+  color: #877254;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.report-list {
+  font-size: 20px;
+  color: #877254;
+  border: 3px solid orange;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.report-list-date {
+  margin: 10px 10px;
+}
+
+.report-list-date-title {
+  display: inline-block;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+.report-list-date-result { 
+  border: 2px solid  orange;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
