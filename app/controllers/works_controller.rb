@@ -10,6 +10,7 @@ class WorksController < ApplicationController
     if @work.save
       redirect_to root_path
     else
+      Rails.logger.debug(@work.errors.full_messages)
       render :index
     end
   end
