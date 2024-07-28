@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
 
   def index
     # @reports = Report.where(user_id: current_user.id).order(created_at: :desc)
-    @reports = Report.all.order(created_at: :desc)
+    @reports = current_user.reports.order(created_at: :desc)
   end
 
   def new

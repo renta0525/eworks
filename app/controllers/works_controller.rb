@@ -8,6 +8,7 @@ class WorksController < ApplicationController
   def create
     @work = current_user.works.new(work_params)
     if @work.save
+      flash[:notice] = "出勤しました"
       redirect_to root_path
     else
       Rails.logger.debug(@work.errors.full_messages)

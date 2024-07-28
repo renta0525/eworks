@@ -11,6 +11,7 @@
     </div>
   </div>
   <%# 出勤しましたのも文字出したい %>
+
   <div class="works_btn">
     <%= form_with model: @work, url: works_path, local: true do |form| %>
       <%= form.hidden_field :place, id: 'work_place' %>
