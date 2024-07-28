@@ -1,5 +1,6 @@
 class Work < ApplicationRecord
-  validates :place, presence: true
   belongs_to :user
+  belongs_to :report 
+  validates :place, presence: true
 end
 
