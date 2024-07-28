@@ -25,9 +25,12 @@
     <span class="indispensable">必須</span>
     </div>
     <%= f.text_area :introspection, class:"introspection", id:"introspection" %>
-  </div>
-  
-  <div class='report-submission'>
-    <%= f.submit "提出", class: 'report-submission-btn'%>
+
+    <div class='report-submission'>
+     <%= f.submit "提出", class: 'report-submission-btn'%>
+    </div>
+
   </div>
 <% end %>
+
+<%= render "shared/footer" %>

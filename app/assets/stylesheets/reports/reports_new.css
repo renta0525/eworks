@@ -1,5 +1,6 @@
 .report-filing-list {
   width: 80%;
+  height: 80vh;
   margin: auto;
   padding: 30px;
   /* background-color: blanchedalmond; */
@@ -22,12 +23,11 @@
   width: 100%;
   border: 1px solid #877254;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .report-submission {
   width: 80%;
-  margin: auto;
-  padding: 0 0 0 30px;
 }
 
 .report-submission-btn {
