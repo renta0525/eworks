@@ -24,9 +24,9 @@ class ReportsController < ApplicationController
     @report.work_id = @latest_work&.id
 
     if @report.save
-      redirect_to reports_path, notice: 'Report was successfully created.'
+      redirect_to reports_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 

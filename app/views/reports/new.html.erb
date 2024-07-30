@@ -1,5 +1,5 @@
 <%= render "shared/header" %>
-
+<%= render 'shared/error_messages', model: @report %>
 <%= form_with model: @report, url: reports_path, local: true do |f| %>
   <div class= "report-filing-list">
     <div class="report-filing-title">
