@@ -15,7 +15,7 @@
 .report-list {
   font-size: 20px;
   color: #877254;
-  border: 3px solid orange;
+  border: 5px solid orange;
   border-radius: 10px;
   width: 80%;
   margin: 20px auto;
@@ -36,6 +36,21 @@
   border: 2px solid  orange;
   border-radius: 5px;
   padding: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow-wrap: break-word;
+}
+
+.report-date-edit {
+  text-align: right;
+  margin: 10px 10px;
+}
+
+.report-date-edit-btn {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid orange;
+  color: #877254;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2px;
 }

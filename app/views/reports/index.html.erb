@@ -54,6 +54,9 @@
           <%= report.introspection %>
         </div>
       </div>
+      <div class="report-date-edit">
+        <%= link_to "編集", edit_report_path(report), class: 'report-date-edit-btn'%>
+      </div>
     </div>
   <% else %>
     <div>

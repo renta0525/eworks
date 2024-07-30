@@ -28,13 +28,19 @@ class ReportsController < ApplicationController
     else
       render :new
     end
-    # @report = Report.new(report_params)
-    # if @report.save
-    #   redirect_to reports_path
-    #   binding.pry
-    # else
-    #   render :new
-    # end
+  end
+
+  def edit
+    @report = Report.find(params[:id])
+  end
+
+  def update
+    @report = Report.find(params[:id])
+    if @report.update(report_params)
+      redirect_to reports_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   private
