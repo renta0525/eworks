@@ -1,9 +1,24 @@
-<%= render "shared/header"%>
+<%= render "shared/header" %>
 
+<script src="works.js"></script>
 <div class="wrapper">
   <div class='main'>
-    打刻機能
+    <div class='day'>
+      0000年00月00年（）
+    </div>
+    <div class='clock'>
+      00:00:00
+    </div>
+  </div>
+
+  <div class="works_btn">
+    <%= form_with model: @work, url: works_path, local: true do |form| %>
+      <%= form.hidden_field :place, id: 'work_place' %>
+      <div>
+        <%= form.submit '出勤', id: 'get-location' %>
+      </div>
+    <% end %>
   </div>
 </div>
 
-<%# <%= render "shared/footer"%> 
+<%= render "shared/footer"  %>

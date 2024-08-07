@@ -1,0 +1,38 @@
+.report-filing-list {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  padding: 30px;
+  /* background-color: blanchedalmond; */
+}
+
+.report-filing-title {
+  color: #877254;
+  font-size: 20px;
+  margin-bottom: 5px;
+  
+}
+
+.negotiation, .negotiation_obtain, .negotiation_lost{
+  margin-bottom: 10px;
+  border: 1px solid #877254;
+  border-radius: 10px;
+}
+
+.introspection {
+  width: 100%;
+  border: 1px solid #877254;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.report-submission {
+  width: 80%;
+}
+
+.report-submission-btn {
+  font-size: 30px;
+  color: #877254;
+  border: 1px solid #877254;
+  border-radius: 10px;
+}

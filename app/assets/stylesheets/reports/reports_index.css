@@ -1,0 +1,56 @@
+.report-creat {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.report-creat-btn {
+  border: 4px solid #00afcc;
+  text-decoration: none;
+  font-size: 30px;
+  color: #877254;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.report-list {
+  font-size: 20px;
+  color: #877254;
+  border: 5px solid #00afcc;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.report-list-date {
+  margin: 10px 10px;
+}
+
+.report-list-date-title {
+  display: inline-block;
+  border: 2px solid #00afcc;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+.report-list-date-result { 
+  border: 2px solid  #00afcc;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+
+.report-date-edit {
+  text-align: right;
+  margin: 10px 10px;
+}
+
+.report-date-edit-btn {
+  text-decoration: none;
+  display: inline-block;
+  border: 3px solid #00afcc;
+  color: #877254;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2px;
+}

@@ -13,13 +13,39 @@
   align-items: center;
 }
 
-.header-title a{
+.eworks-icon {
+  font-family: Courier;
   font-size: 30px;
   color: black;
   text-decoration: none;
 }
 
-.list {
+ul.list {
   font-size: 20px;
-  color: red;
+  list-style-type: none;
+}
+
+.user-nickname {
+  color: black;
+  text-decoration: none;
+}
+
+.repors_index {
+  color: black;
+  text-decoration: none;
+}
+
+.logout {
+  color: black;
+  text-decoration: none;
+}
+
+.login {
+  color: black;
+  text-decoration: none;
+}
+
+.sign-up {
+  color: black;
+  text-decoration: none;
 }
